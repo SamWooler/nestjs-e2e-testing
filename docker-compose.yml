@@ -1,0 +1,11 @@
+services:
+  db:
+    container_name: "postgres"
+    image: "postgres:18.1"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: cars
+    ports:
+      - "5432:5432"
+    
